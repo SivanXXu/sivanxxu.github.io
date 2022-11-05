@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body 
+	{
+	margin: 0;
+	font-family: 'Dosis';
+	font-weight: 700;
+	background-color: rgb(53, 47, 47);
+	font-size: 20px;
+	z-index: 2;
+	background: rgb(206, 205, 205);
+	padding-bottom: 50px;
+	}
+
+h1 
+	{
+	color: rgb(68, 0, 255);
+  	font-size: 85px;
+  	font-weight: 800;
+  	margin-top: 150px;
+  	margin-bottom: 0;
+  	text-align: center;
+	z-index: 2;
+	}
+
+table, tr
+	{	
+	color: rgb(69, 11, 228);
+	table-layout: fixed;
+	margin-top: 80px;
+  	width: 70%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	font-size: 20px;
+	}
+
+.service table
+	{
+	table-layout: fixed;
+  	margin-top: 20px;
+  	width: 40%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	font-size: 25px;
+	}
+
+.service td
+	{
+	width: 40%;
+	}
+
+.experience table
+	{
+	table-layout: fixed;
+	margin-top: 20px;
+	width: 40%;
+	margin-right: auto;
+	font-size: 25px;
+	}
+
+.experience td
+	{
+	font-size: 30px;
+	}
+
+.experience h1
+	{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 150px;
+	font-size: 50px;
+	}
+
+
+.contact td
+	{
+	font-size: 40px;
+	}
+
+p
+	{ 
+	margin: 25px; 
+	text-align:left;
+	color: rgb(69, 11, 228);
+	font-size: 30px;
+	}
+
+.container 
+	{
+	background: white;
+	font-family: 'Dosis';
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	direction: rtl;
+	display: table;
+	table-layout: fixed;
+	margin: 0 auto;
+	}
+
+
+nav
+	{
+	top: 0;
+	width: 100%
+	}
+
+nav a
+	{
+	color: #444;
+	text-decoration: none;
+	font-size: 28px;
+	}
+
+.tags::before
+	{
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: rgb(69, 11, 228);
+	  
+	position: absolute;
+	top: 40px;
+	width: 0%;
+	  
+	transition: all ease-in-out 250ms;
+	}
+
+
+.tags:hover::before
+	{
+	width: 100%;
+	}
+
+nav ul 
+	{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin: 0px auto;
+	}
+
+nav li
+	{
+	position: relative;
+	bottom: -35px;
+	display: inline-block;
+	margin-left: 20px;
+	}	
+
+	
+.body.li
+	{
+	float: left;
+	margin-left: auto;
+	}
+
+.logo
+	{
+	float: left;
+	width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-left: 40px;
+	}
+
+li a 
+	{
+	display: block;
+	color: rgb(69, 11, 228);
+	text-align: center;
+	padding: 0px;
+	text-decoration: none;
+	}
+
+img.center
+	{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	top: 15px;
+	z-index: 20;
+	}
+
+.image 
+	{
+	position: relative;
+	float: right;
+	margin-right: 50px;
+	display: block;
+	object-fit: none;
+	z-index: 20;
+	}
+
+.footer
+	{
+	position: relative;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+	}
+
+.footer table
+	{
+	min-width: 1338px;
+	text-align: center;
+	}
+
+.footer td
+	{
+		text-align: center;
+		margin-right: 100px;
+	}
