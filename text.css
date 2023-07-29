@@ -10,7 +10,7 @@ body
 	background-color: rgb(0, 0, 0);
 	font-size: 20px;
 	z-index: 2;
-	background: rgb(0, 0, 0);
+	background: rgb(240, 210, 210);
 	padding-top: 90px;
 	padding-bottom: 5px;
 	}
@@ -43,6 +43,15 @@ p
 	font-size:30px;
 	margin-left:20%;
 	margin-right:20%;
+	text-decoration: none;
+	}
+
+.intro p
+	{
+	font-weight:500;
+	font-size:60px;
+	margin-left:20px;
+	margin-right:20px;
 	text-decoration: none;
 	}
 
@@ -141,7 +150,7 @@ ol li a
 	display: table;
 	table-layout: fixed;
 	margin: 5;
-	height:90px;
+	height:60px;
 	}
 
 @media (max-width:1366px){
@@ -176,83 +185,6 @@ section
 	top:90px;
 	}
 
-.bgimg
-	{
-		position: relative;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		max-width: 600px; 
-		max-height: 600px;
-		height:100%;
-		z-index: 1;
-	}
-
-@media (max-width: 1366px) {
-	.bgimg {
-		top:75px;
-		max-height:30%;
-		max-width: 30%;
-    	background-position: center;
-    	background-size: cover;
-		margin-bottom:350px;
-	}
-}
-
-.bgimg2
-	{
-	position: absolute;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	top:0px;
-	width: 100%;
-	height: auto; 
-	max-width: 3544px; 
-	max-height: 1654px;
-	z-index: 0;
-	}
-
-.world
-	{
-		position: relative;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		height: auto; 
-		max-width: 1024px; 
-		max-height: 450px;
-		z-index: 0;
-		border-radius: 50px;
-	}
-
-.event
-	{
-	height: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	background-size: cover;
-	position: relative;
-	border-radius:50px;
-	max-width: 100%;
-	width:100%;
-	height:100%;
-	object-fit:contain;
-	}
-
-@media (max-width: 1024px) {
-	.event {
-		height:auto;
-		max-width: 100%;
-		margin-top: 100px;
-		border-radius: 50px;
-		background-position: center;
-		background-size: cover;
-		}
-		}
-
 .example
 	{
 	position:relative;
@@ -274,43 +206,6 @@ section
 		max-height:75%;
 		max-width: 75%;
 		}
-	}
-
-.robot-outreach
-	{
-	display: table;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius:50px;
-	max-width: 1200px;
-	max-height: 500px;
-	}
-
-@media (max-width: 1366px) {
-	.robot-outreach {
-		display: table;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius:50px;
-		max-width: 800px;
-		max-height: 375px;
-		}
-	}
-
-@media (max-width: 768px) {
-	.robot-outreach {
-		display: table;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius:50px;
-		max-width: 600px;
-		max-height: 281px;
-		}
-	}
-
-.robot-outreach p
-	{
-	margin-left:0;
 	}
 
 
@@ -359,86 +254,42 @@ section
 	text-align:right;
 	}
 
-.progress-bar
-	{
-	background:#444;
-	width: 600px;
-	height: 10px;
-	border-radius: 5px;
-	}
-
-.progress-bar div
-	{
-	height: 10px;
-	border-radius: 5px;
-	width: 0%;
-	background: rgb(255, 255, 255);
-	}
-
-.progress-bar div span
-	{
-	font-family: 'League Spartan';
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	background:rgb(0, 0, 0);
-	float: right;
-	margin-top:-15px;
-	margin-right: -20px;
-	border: 2px solid white;
-	color:#ffffff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	}
-
-@media (max-width: 768px) {
-	.progress-bar {
-		background:#444;
-		width: 400px;
-		height: 10px;
-		border-radius: 5px;
-		}
-}
-
-.percent
-	{
-	animation: percent 1s linear forwards;
-	font-size:15px;
-	}
-
-@keyframes percent
-	{
-	100%{
-		width: 20%;
-	}
-	}
-	
-.sponsor {
-	box-sizing: border-box;
+.intro {
+	position:relative;
 	margin-left: auto;
 	margin-right: auto;
-	width: 250px;
-	height: 160px;
+	border-spacing:50px;
+}
+	
+.intro td{
+	position:relative;
+	border-spacing:50px;
+	font-family: 'League Spartan';
+	box-sizing: border-box;
+	margin-left: 0;
+	margin-right: 0;
+	width: 500px;
+	height: 500px;
 	text-align: center;
-	border-radius: 5px;
-	padding: 20px;
-	background-color: #444;
+	border-radius: 125px;
+	background-color: #fac1c1;
 	transition: ease-out 0.3s;
+	border-style: solid;
   }
   
-.sponsor:hover {
-	background-color: white;
+.intro td:hover {
+	background-color: rgb(216, 65, 65);
+	border-color:white;
 	cursor: pointer;
   }
 
 @media (max-width: 1000px) {
-	.sponsor {
+	.intro td{
 		box-sizing: border-box;
 		margin-left: auto;
 		margin-right: auto;
 		width: 175px;
-		height: 110px;
+		height: 175px;
 		text-align: center;
 		border-radius: 5px;
 		padding: 20px;
@@ -447,7 +298,7 @@ section
 }
 
 @media (max-width: 768px) {
-	.sponsor {
+	.intro td{
 		box-sizing: border-box;
 		margin-left: auto;
 		margin-right: auto;
@@ -459,34 +310,93 @@ section
 		background-color: #444;
 	}
 }
+.bcontainer {
+	display: flex;
+	justify-content: center;
+  }
+  
 
-.map
-	{
-	margin-right:40%;
-	border-radius: 50px;
-	max-width:100%;
+.blog {
+	scroll-behavior: smooth;
+	max-width: 1500px;
+	height: 400px;
+	overflow-y: auto;
+	-webkit-mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0), black calc(100% - var(--bottom-mask-size, 0)), transparent 100%);
+	mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0), black calc(100% - var(--bottom-mask-size, 0)), transparent 100%);
+	--top-mask-size: 0px;
+	--bottom-mask-size: 0px;
+  }
+
+.blog p {
 	position:relative;
-	object-fit:contain;
-	}
+	font-size: 20px;
+	padding: 20px 0;
+	text-align:left;
+	margin-left:30px;
+	width: 800px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: -20px;
+}
+  
+  #content.is-top-overflowing {
+	--top-mask-size: 48px !important;
+  }
+  
+  #content.is-bottom-overflowing {
+	--bottom-mask-size: 48px !important;
+  }
 
-@media (max-width: 1366px) {
-	.map {
-		margin-right:40%;
-		border-radius: 50px;
-		max-width:400px;
-		max-height:300px;
-		position:relative;
-	}
+.blog h1 {
+	margin-left: 50px;
 }
 
-@media (max-width: 768px) {
-	.map {
-		margin-right:40%;
-		border-radius: 50px;
-		max-width:250px;
-		max-height:200px;
-		position:relative;
-	}
+.bentry h1 {
+	margin-left: 50px;
+	font-size: 30px;
+}
+
+.bentry h2 {
+	margin-left: 50px;
+	font-size: 25px;
+	margin-top: -20px;
+}
+
+.bentry a {
+	margin-left: 50px;
+	color:black;
+}
+
+.blog img {
+	max-width: 500px;
+	max-height: 200px;
+	margin-left: 25px;
+	padding: 20px;
+}
+
+.bentry {
+	border: 5px solid;
+	border-radius: 50px;
+}
+
+.chapter {
+	position:relative;
+	border: 5px solid;
+	border-radius: 25px;
+	text-align:right;
+}
+
+.chapter h1 {
+	margin-left: 20px;
+	text-align: left;
+}
+
+.chapter a {
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
 }
 
 .text 
@@ -1008,7 +918,7 @@ nav li
 	{
 	font-size: 20px;
 	position: relative;
-	bottom: -35px;
+	bottom: -25px;
 	display: inline-block;
 	margin-left: 20px;
 	}	
@@ -1073,11 +983,13 @@ nav li
 
 .logo
 	{
-	float: left;
-	width: 90px;
-    height: 90px;
-    overflow: hidden;
-    margin-left: 40px;
+	color: white;
+	float:left;
+	font-size: 20px;
+	font-weight: 1000;
+	position: relative;
+	bottom: -25px;
+	margin-left: 80px;
 	}
 
 @media (max-width:1366px){
