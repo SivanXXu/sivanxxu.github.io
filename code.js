@@ -67,9 +67,9 @@ function setClasses(el) {
     el.classList.toggle('is-top-overflowing', !isScrolledToTop);
   }
   
-  document.querySelector('#content').addEventListener('scroll', (e) => {
+  document.querySelector('.blog').addEventListener('scroll', (e) => {
     const el = e.currentTarget;
     setClasses(el);
   });
   
-  setClasses(document.querySelector('#content'));
+  setClasses(document.querySelector('.blog'));
