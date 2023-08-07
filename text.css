@@ -539,6 +539,7 @@ section
 .space {
 	background: white;
 	transition: all 0.5s ease;
+	padding-bottom: 20px;
 }
 
 .space:hover {
@@ -550,10 +551,6 @@ section
 	font-size: 30px;
 	padding: 15px 0px 15px 0px;
 	margin: 0;
-}
-
-.space {
-	padding-bottom: 20px;
 }
 
 .line {
