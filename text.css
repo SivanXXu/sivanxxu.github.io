@@ -9,7 +9,7 @@ section{
 }
 
 .section1 {
-	background: black;
+	background: #e27d60;
 }
 
 .section2 {
@@ -22,8 +22,7 @@ section{
 }
 
 .full-bleed {
-	box-shadow: 0 0 100 100vmax rgb(0, 0, 0);
-	clip-path: inset(0 -100vmax); 
+	box-shadow: 0 0 0 10em #e27d60;
   }
 
 body 
@@ -166,7 +165,8 @@ section
   }
   
 .intro td:hover {
-	background-color: rgb(216, 65, 65);
+	background-color: rgb(0, 0, 0);
+	color: white;
 	border-color:white;
 	cursor: pointer;
   }
@@ -203,8 +203,8 @@ section
 	position: relative;
 	margin-top: 20%;
 	font-size: 75px;
-	left: 11%;
 	font-family: 'League Spartan';
+	margin-left: 11%;
 }
 
 .bcontainer {
