@@ -10,45 +10,25 @@ function isElementVisibleOnScreen(element, threshold = 0) {
 }
 
 function fadeElementInOnScroll() {
-    var elements = document.querySelectorAll('.fade-in');
+    var elements = document.querySelectorAll('.title');
     elements.forEach(function(element) {
         if (isElementVisibleOnScreen(element, 150)) { // minimum 100px of element needs to be visible
             element.classList.add('active');
         }
     });
+    var elements2 = document.querySelectorAll('.title2');
+    elements2.forEach(function(element) {
+        if (isElementVisibleOnScreen(element, 150)) { // minimum 100px of element needs to be visible
+            element.classList.add('active');
+        }
+    });
+    var elements3 = document.querySelectorAll('.title3');
+    elements3.forEach(function(element) {
+        if (isElementVisibleOnScreen(element, 150)) { // minimum 100px of element needs to be visible
+            element.classList.add('active');
+        }
+    });
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    fadeElementInOnScroll();
-    window.addEventListener('scroll', fadeElementInOnScroll);
-});
-
-const button = document.querySelector("#button");
-const button2 = document.querySelector("#button2");
-const button3 = document.querySelector("#button3");
-
-const jsConfetti = new JSConfetti();
-
-button.addEventListener('click', () => {
-    jsConfetti.addConfetti({
-        emojis: ['🍁', '🀄'],
-        confettiNumber: 10,
-    });
-})
-
-button2.addEventListener('click', () => {
-    jsConfetti.addConfetti({
-        emojis: ['💻', '⚡️'],
-        confettiNumber: 10,
-    });
-})
-
-button3.addEventListener('click', () => {
-    jsConfetti.addConfetti({
-        emojis: ['♟️', '🤖', '✖️', '➗', '🏹'],
-        confettiNumber: 15,
-    });
-})
 
 function setClasses(el) {
     const isScrollable = el.scrollHeight > el.clientHeight;
@@ -73,3 +53,115 @@ function setClasses(el) {
   });
   
   setClasses(document.querySelector('.blog'));
+
+
+let intro = document.querySelector('.screen');
+let logo = document.querySelector('.screenheader');
+let logospan = document.querySelectorAll('.welcome');
+
+window.addEventListener("DOMContentLoaded", ()=>{
+    setTimeout(()=>{
+
+        logospan.forEach((span, idx)=>{
+            setTimeout(()=>{
+                span.classList.add('active');
+            }, (idx + 1) * 400)
+        })
+
+        setTimeout(()=>{
+            logospan.forEach((span, idx)=>{
+                setTimeout(()=>{
+                    span.classList.remove('active');
+                    span.classList.add('fade');
+                }, (idx + 1) * 50)
+            })
+        }, 2000)
+
+        setTimeout(() => {
+            intro.style.top = '-100vh';
+        }, 2300);
+
+    })
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+    fadeElementInOnScroll();
+    window.addEventListener('scroll', fadeElementInOnScroll);
+});
+
+const button = document.querySelector("#button");
+const button2 = document.querySelector("#button2");
+const button3 = document.querySelector("#button3");
+
+const jsConfetti = new JSConfetti();
+
+if (window.innerWidth > 1200) {
+    button.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['🍁', '🀄'],
+            confettiNumber: 10,
+        });
+    })
+    
+    button2.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['💻', '⚡️'],
+            confettiNumber: 10,
+        });
+    })
+    
+    button3.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['♟️', '🤖', '✖️', '➗', '🏹'],
+            confettiNumber: 15,
+        });
+    })
+} else if (window.innerWidth < 1200){
+    button.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['🍁', '🀄'],
+            emojiSize: 50,
+            confettiNumber: 10,
+        });
+    })
+    
+    button2.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['💻', '⚡️'],
+            emojiSize: 50,
+            confettiNumber: 10,
+        });
+    })
+    
+    button3.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['♟️', '🤖', '✖️', '➗', '🏹'],
+            emojiSize: 50,
+            confettiNumber: 15,
+        });
+    })
+} else {
+    button.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['🍁', '🀄'],
+            emojiSize: 50,
+            confettiNumber: 10,
+        });
+    })
+    
+    button2.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['💻', '⚡️'],
+            emojiSize: 50,
+            confettiNumber: 10,
+        });
+    })
+    
+    button3.addEventListener('click', () => {
+        jsConfetti.addConfetti({
+            emojis: ['♟️', '🤖', '✖️', '➗', '🏹'],
+            emojiSize: 50,
+            confettiNumber: 15,
+        });
+    })
+}
