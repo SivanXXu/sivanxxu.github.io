@@ -54,7 +54,6 @@ function setClasses(el) {
   
   setClasses(document.querySelector('.blog'));
 
-
 let intro = document.querySelector('.screen');
 let logo = document.querySelector('.screenheader');
 let logospan = document.querySelectorAll('.welcome');
