@@ -107,6 +107,10 @@ p
 	color:white;
 	}
 
+.revealing {
+	overflow: hidden;
+}
+
 .title
 	{
 	position: relative;
@@ -114,14 +118,24 @@ p
 	font-size: 3.906vw;
 	font-family: 'League Spartan';
 	margin-left: 11%;
-	opacity: 0;
-  	transition: opacity 1.5s ease-in-out;
 	color: white;
-	scroll-margin-top: 86px;
+	scroll-margin-top: 100px;
+	width: max-content;
+	white-space: nowrap;
+	line-height: 1;
 	}
 
 .title.active {
-	opacity: 1;
+	animation: slide-up 0.75s cubic-bezier(0.65, 0, 0.35, 1) 0.5s;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px)
+  }
+  100% {
+    transform: translateY(0)
+  }
 }
 
 .title2 {
@@ -272,25 +286,6 @@ section
 	--bottom-mask-size: 48px !important;
   }
 
-.chap1 {
-	margin-left: 50px;
-	font-family: 'League Spartan';
-	font-size: 2.083vw;
-	display: block;
-	position: relative;
-	color: white;
-}
-
-.chap2 {
-	margin-left: 50px;
-	font-family: 'League Spartan';
-	font-size: 2.083vw;
-	display: block;
-	position: relative;
-	color: white;
-	scroll-margin-top: 250px;
-}
-
 .bentry h1 {
 	font-family: 'League Spartan';
 	margin-left: 50px;
@@ -355,6 +350,7 @@ section
 	text-align: center;
 	font-size: 1.042vw;
 	display: block;
+	margin-bottom: 10px;
 }
 
 
