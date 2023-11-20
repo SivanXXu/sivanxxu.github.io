@@ -15,7 +15,7 @@ section{
 }
 
 .special {
-	scroll-margin-top: 80px;
+	scroll-margin-top: 60px;
 }
 
 /* Splash Screen */
@@ -117,7 +117,7 @@ p
 	opacity: 0;
   	transition: opacity 1.5s ease-in-out;
 	color: white;
-	scroll-margin-top: 60px;
+	scroll-margin-top: 86px;
 	}
 
 .title.active {
@@ -201,12 +201,14 @@ section
 	transition: ease-out 0.3s;
 	border-style: solid;
 	border-color:rgb(255, 255, 255);
+	top: 0;
   }
   
-.intro td:hover {
+.intro td:hover{
 	background-color: #ffffff;
 	border-color:gray;
 	cursor: pointer;
+	top: -15px;
   }
 
 .intro td:hover p {
@@ -217,6 +219,7 @@ section
 .bcontainer {
 	display: flex;
 	justify-content: center;
+	scroll-padding-top: 2000px;
   }
 
 
@@ -231,7 +234,6 @@ section
 	--top-mask-size: 0px;
 	--bottom-mask-size: 0px;
 	display: block;
-	scroll-padding-bottom: 2000px;
   }
 
 .blog p {
@@ -248,9 +250,20 @@ section
 	font-family: 'League Spartan';
 	font-weight: 400;
 	color: white;
+	scroll-padding-top: 2000px;
+}
+
+.blog h1{
+	margin-left: 50px;
+	font-family: 'League Spartan';
+	font-size: 2.083vw;
+	display: block;
+	position: relative;
+	color: white;
 }
   
 .blog.is-top-overflowing {
+	scroll-padding-top: 2000px;
 	--top-mask-size: 48px !important;
   }
   
@@ -258,13 +271,24 @@ section
 	--bottom-mask-size: 48px !important;
   }
 
-.blog h1 {
+.chap1 {
 	margin-left: 50px;
 	font-family: 'League Spartan';
 	font-size: 2.083vw;
 	display: block;
 	position: relative;
-	scroll-margin-top: 250px;
+	scroll-margin-top: 320px;
+	color: white;
+}
+
+.chap2 {
+	margin-left: 50px;
+	font-family: 'League Spartan';
+	font-size: 2.083vw;
+	display: block;
+	position: relative;
+	scroll-margin-top: 100px;
+	color: white;
 }
 
 .bentry h1 {
@@ -354,7 +378,7 @@ section
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-image: url("images/queens.gif");
+	background-image: url("images/queens.jpg");
 	background-size: cover;
 	background-position-y: center;
 	width: 100%;
@@ -383,7 +407,7 @@ section
 
 .vic
 	{
-	background-image: url("images/vic.jpg");
+	background-image: url("images/vic2.png");
 	display: block;
 	height: 15.625vw;
 	position: relative;
