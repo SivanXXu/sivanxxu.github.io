@@ -54,6 +54,23 @@ function setClasses(el) {
   
   setClasses(document.querySelector('.blog'));
 
+  const nav = document.querySelector(".chapter");
+  const container = document.querySelector(".blog");
+  
+  function linkClick(e) {
+    e.preventDefault();
+    const target = e.target.getAttribute("href");
+    const targetElement = document.querySelector(target);
+    container.scroll({
+      top: targetElement.offsetTop-35,
+      behavior: "smooth",
+    });
+  }
+  
+  for (let link of nav.children) {
+    link.addEventListener("click", linkClick);
+  }
+
 
 let intro = document.querySelector('.screen');
 let logo = document.querySelector('.screenheader');

@@ -219,7 +219,8 @@ section
 .bcontainer {
 	display: flex;
 	justify-content: center;
-	scroll-padding-top: 2000px;
+	scroll-behavior: smooth;
+	position: relative;
   }
 
 
@@ -250,7 +251,6 @@ section
 	font-family: 'League Spartan';
 	font-weight: 400;
 	color: white;
-	scroll-padding-top: 2000px;
 }
 
 .blog h1{
@@ -263,7 +263,7 @@ section
 }
   
 .blog.is-top-overflowing {
-	scroll-padding-top: 2000px;
+
 	--top-mask-size: 48px !important;
   }
   
@@ -277,7 +277,6 @@ section
 	font-size: 2.083vw;
 	display: block;
 	position: relative;
-	scroll-margin-top: 320px;
 	color: white;
 }
 
@@ -287,7 +286,6 @@ section
 	font-size: 2.083vw;
 	display: block;
 	position: relative;
-	scroll-margin-top: 100px;
 	color: white;
 }
 
