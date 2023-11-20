@@ -28,6 +28,12 @@ function fadeElementInOnScroll() {
             element.classList.add('active');
         }
     });
+    var elements3 = document.querySelectorAll('.projects h3');
+    elements3.forEach(function(element) {
+        if (isElementVisibleOnScreen(element, 150)) { // minimum 100px of element needs to be visible
+            element.classList.add('active');
+        }
+    });
 }
 
 function setClasses(el) {

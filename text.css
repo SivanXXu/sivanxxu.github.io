@@ -30,6 +30,7 @@ section{
 	transition: 1s;
 }
 
+
 .screenheader {
 	position: absolute;
 	top: 40%;
@@ -120,18 +121,21 @@ p
 	margin-left: 11%;
 	color: white;
 	scroll-margin-top: 100px;
-	width: max-content;
-	white-space: nowrap;
-	line-height: 1;
+	opacity: 0;
 	}
 
 .title.active {
-	animation: slide-up 0.75s cubic-bezier(0.65, 0, 0.35, 1) 0.5s;
+	opacity: 1;
+	width: max-content;
+	white-space: nowrap;
+	line-height: 1;
+	animation: slide-up 1s;
+	animation-timing-function: ease;
 }
 
 @keyframes slide-up {
   0% {
-    transform: translateY(100px)
+    transform: translateY(150px)
   }
   100% {
     transform: translateY(0)
@@ -143,12 +147,17 @@ p
 	font-size: 3.906vw;
 	margin-left: 9.8%;
 	opacity: 0;
-  	transition: opacity 1.5s ease-in-out;
 	color: white;
+	position: relative;
 }
 
 .title2.active {
 	opacity: 1;
+	width: max-content;
+	white-space: nowrap;
+	line-height: 1;
+	animation: slide-up 1s;
+	animation-timing-function: ease;
 }
 
 .title3 {
@@ -158,12 +167,20 @@ p
 	margin: 0;
 	padding: 20px 0px 20px 0px;
 	opacity: 0;
-  	transition: opacity 1.5s ease-in-out;
 	color: white;
 }
 
 .title3.active {
 	opacity: 1;
+	width: max-content;
+	white-space: nowrap;
+	line-height: 1;
+	animation: slide-up 1s;
+	animation-timing-function: ease;
+}
+
+.year {
+	overflow: hidden;
 }
 
 .block
@@ -453,19 +470,34 @@ section
 	background: gray;
 }
 
-.projects h3 {
+.preveal{
+	overflow: hidden;
+}
+
+.year {
 	font-family: 'League Spartan';
 	position: relative;
 	font-size: 1.563vw;
 	padding: 15px 0px 15px 0px;
 	margin: 0;
 	color: white;
+	opacity: 0;
+}
+
+.year.active{
+	opacity: 1;
+	width: max-content;
+	white-space: nowrap;
+	line-height: 1;
+	animation: slide-up 1s;
+	animation-timing-function: ease;
 }
 
 .line {
 	border-top: 5px solid;
 	border-bottom: 3px solid;
 	border-color: white;
+	overflow: hidden;
 }
 
 .line2 {
