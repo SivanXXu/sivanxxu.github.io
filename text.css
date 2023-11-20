@@ -300,7 +300,7 @@ section
 	font-family: 'League Spartan';
 	margin-left: 50px;
 	font-size: 1.302vw;
-	margin-top: -1.402vw;
+	margin-top: 1.402vw;
 	color: white;
 }
 
@@ -309,6 +309,10 @@ section
 	margin-left: 50px;
 	color:rgb(255, 255, 255);
 	font-size: 1.042vw;
+}
+
+.bimg{
+	border-radius: 20%;
 }
 
 .blog img {
@@ -322,6 +326,7 @@ section
 	border: 5px solid;
 	border-radius: 50px;
 	border-color: white;
+	width: 100%;
 }
 
 .chapter {
