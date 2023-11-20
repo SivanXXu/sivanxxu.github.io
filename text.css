@@ -6,8 +6,16 @@ section{
 	scroll-margin-top: 3.125vw;
 }
 
+.section1 {
+	background: #e27d60;
+}
+
+.section2 {
+	background: rgb(196, 71, 71);
+}
+
 .special {
-	scroll-margin-top: 80px;
+	scroll-margin-top: 60px;
 }
 
 /* Splash Screen */
@@ -36,7 +44,7 @@ section{
 	bottom: -20px;
 	opacity: 0;
 	font-family: 'League Spartan';
-	font-size: 100px;
+	font-size: 80px;
 }
 
 .welcome.active {
@@ -109,7 +117,7 @@ p
 	opacity: 0;
   	transition: opacity 1.5s ease-in-out;
 	color: white;
-	scroll-margin-top: 60px;
+	scroll-margin-top: 86px;
 	}
 
 .title.active {
@@ -193,12 +201,14 @@ section
 	transition: ease-out 0.3s;
 	border-style: solid;
 	border-color:rgb(255, 255, 255);
+	top: 0;
   }
   
-.intro td:hover {
+.intro td:hover{
 	background-color: #ffffff;
 	border-color:gray;
 	cursor: pointer;
+	top: -15px;
   }
 
 .intro td:hover p {
@@ -209,18 +219,22 @@ section
 .bcontainer {
 	display: flex;
 	justify-content: center;
+	scroll-behavior: smooth;
+	position: relative;
   }
+
 
 .blog {
 	scroll-behavior: smooth;
 	max-width: 78.125vw;
 	height: 400px;
-	overflow-y: auto;
+	overflow-y: scroll;
 	overflow-x: hidden;
 	-webkit-mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0), black calc(100% - var(--bottom-mask-size, 0)), transparent 100%);
 	mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0), black calc(100% - var(--bottom-mask-size, 0)), transparent 100%);
 	--top-mask-size: 0px;
 	--bottom-mask-size: 0px;
+	display: block;
 	scroll-padding-bottom: 2000px;
   }
 
@@ -232,15 +246,25 @@ section
 	margin-left:30px;
 	width: 41.667vw;
 	white-space: nowrap;
-	overflow: hidden;
+	overflow: clip;
 	text-overflow: ellipsis;
 	margin-top: -20px;
 	font-family: 'League Spartan';
 	font-weight: 400;
 	color: white;
 }
+
+.blog h1{
+	margin-left: 50px;
+	font-family: 'League Spartan';
+	font-size: 2.083vw;
+	display: block;
+	position: relative;
+	color: white;
+}
   
 .blog.is-top-overflowing {
+
 	--top-mask-size: 48px !important;
   }
   
@@ -248,10 +272,21 @@ section
 	--bottom-mask-size: 48px !important;
   }
 
-.blog h1 {
+.chap1 {
 	margin-left: 50px;
 	font-family: 'League Spartan';
 	font-size: 2.083vw;
+	display: block;
+	position: relative;
+	color: white;
+}
+
+.chap2 {
+	margin-left: 50px;
+	font-family: 'League Spartan';
+	font-size: 2.083vw;
+	display: block;
+	position: relative;
 	color: white;
 	scroll-margin-top: 250px;
 }
@@ -267,7 +302,7 @@ section
 	font-family: 'League Spartan';
 	margin-left: 50px;
 	font-size: 1.302vw;
-	margin-top: -1.402vw;
+	margin-top: 1.402vw;
 	color: white;
 }
 
@@ -276,6 +311,10 @@ section
 	margin-left: 50px;
 	color:rgb(255, 255, 255);
 	font-size: 1.042vw;
+}
+
+.bimg{
+	border-radius: 20%;
 }
 
 .blog img {
@@ -289,6 +328,7 @@ section
 	border: 5px solid;
 	border-radius: 50px;
 	border-color: white;
+	width: 100%;
 }
 
 .chapter {
@@ -314,7 +354,9 @@ section
 	padding-right: 1.042vw;
 	text-align: center;
 	font-size: 1.042vw;
+	display: block;
 }
+
 
 .education h1 {
 	text-align: center;
@@ -341,10 +383,9 @@ section
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-image: url("images/queens.gif");
+	background-image: url("images/queens.jpg");
 	background-size: cover;
 	background-position-y: center;
-	overflow: hidden;
 	width: 100%;
 	height: 0;
 	transition: 0.5s ease;
@@ -371,7 +412,7 @@ section
 
 .vic
 	{
-	background-image: url("images/vic.jpg");
+	background-image: url("images/vic2.png");
 	display: block;
 	height: 15.625vw;
 	position: relative;
@@ -550,6 +591,7 @@ li a
 	text-align: center;
 	padding: 0px;
 	text-decoration: none;
+	scroll-behavior: smooth;
 	}
 
 
