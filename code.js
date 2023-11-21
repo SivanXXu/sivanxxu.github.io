@@ -12,25 +12,31 @@ function isElementVisibleOnScreen(element, threshold = 0) {
 function fadeElementInOnScroll() {
     var elements = document.querySelectorAll('.title');
     elements.forEach(function(element) {
-        if (isElementVisibleOnScreen(element, 150)) { // minimum 100px of element needs to be visible
+        if (isElementVisibleOnScreen(element, 100)) { // minimum 100px of element needs to be visible
             element.classList.add('active');
         }
     });
     var elements2 = document.querySelectorAll('.title2');
     elements2.forEach(function(element) {
-        if (isElementVisibleOnScreen(element, 150)) { // minimum 100px of element needs to be visible
+        if (isElementVisibleOnScreen(element, 100)) { // minimum 100px of element needs to be visible
             element.classList.add('active');
         }
     });
     var elements3 = document.querySelectorAll('.title3');
     elements3.forEach(function(element) {
-        if (isElementVisibleOnScreen(element, 150)) { // minimum 100px of element needs to be visible
+        if (isElementVisibleOnScreen(element, 100)) { // minimum 100px of element needs to be visible
             element.classList.add('active');
         }
     });
     var elements3 = document.querySelectorAll('.projects h3');
     elements3.forEach(function(element) {
-        if (isElementVisibleOnScreen(element, 150)) { // minimum 100px of element needs to be visible
+        if (isElementVisibleOnScreen(element, 100)) { // minimum 100px of element needs to be visible
+            element.classList.add('active');
+        }
+    });
+    var elements3 = document.querySelectorAll('.desc');
+    elements3.forEach(function(element) {
+        if (isElementVisibleOnScreen(element, 100)) { // minimum 100px of element needs to be visible
             element.classList.add('active');
         }
     });
@@ -128,14 +134,14 @@ if (window.innerWidth > 1200) {
     
     button2.addEventListener('click', () => {
         jsConfetti.addConfetti({
-            emojis: ['💻', '⚡️'],
+            emojis: ['💻', '⚡️', '💸'],
             confettiNumber: 10,
         });
     })
     
     button3.addEventListener('click', () => {
         jsConfetti.addConfetti({
-            emojis: ['♟️', '🤖', '✖️', '➗', '🏹'],
+            emojis: ['♟️', '🤖', '✖️', '➗', '🏀'],
             confettiNumber: 15,
         });
     })
@@ -150,7 +156,7 @@ if (window.innerWidth > 1200) {
     
     button2.addEventListener('click', () => {
         jsConfetti.addConfetti({
-            emojis: ['💻', '⚡️'],
+            emojis: ['💻', '⚡️', '💸'],
             emojiSize: 50,
             confettiNumber: 10,
         });
@@ -158,7 +164,7 @@ if (window.innerWidth > 1200) {
     
     button3.addEventListener('click', () => {
         jsConfetti.addConfetti({
-            emojis: ['♟️', '🤖', '✖️', '➗', '🏹'],
+            emojis: ['♟️', '🤖', '✖️', '➗', '🏀'],
             emojiSize: 50,
             confettiNumber: 15,
         });
@@ -174,7 +180,7 @@ if (window.innerWidth > 1200) {
     
     button2.addEventListener('click', () => {
         jsConfetti.addConfetti({
-            emojis: ['💻', '⚡️'],
+            emojis: ['💻', '⚡️', '💸'],
             emojiSize: 50,
             confettiNumber: 10,
         });
@@ -182,7 +188,7 @@ if (window.innerWidth > 1200) {
     
     button3.addEventListener('click', () => {
         jsConfetti.addConfetti({
-            emojis: ['♟️', '🤖', '✖️', '➗', '🏹'],
+            emojis: ['♟️', '🤖', '✖️', '➗', '🏀'],
             emojiSize: 50,
             confettiNumber: 15,
         });

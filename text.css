@@ -18,6 +18,11 @@ section{
 	scroll-margin-top: 60px;
 }
 
+h4 {
+	padding: 0;
+	margin: 5px;
+}
+
 /* Splash Screen */
 .screen {
 	position: fixed;
@@ -455,19 +460,34 @@ section
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: hidden;
 }
 
 .space {
-	font-family: 'League Spartan';
 	background: rgb(0, 0, 0);
 	transition: all 0.7s ease;
-	padding-bottom: 20px;
-	font-size: 1.042vw;
-	color: white;
+	padding-bottom: 10px;
+	overflow: hidden;
 }
 
 .space:hover {
 	background: gray;
+}
+
+.desc{
+	font-family: 'League Spartan';
+	font-size: 1.542vw;
+	color: white;
+	opacity: 0;
+}
+
+.desc.active{
+	opacity: 1;
+	width: max-content;
+	white-space: nowrap;
+	line-height: 1;
+	animation: slide-up 1s;
+	animation-timing-function: ease;
 }
 
 .preveal{
@@ -505,28 +525,6 @@ section
 	padding-bottom: 20px;
 	border-color: white;
 }
-	  
-@keyframes slideLeft {
-	0% {
-	  opacity: 0;
-	  transform: translateX(-100%);
-	}
-	100% {
-	  opacity: 1;
-	  transform: translateX(0);
-	}
-  }
-  
-@keyframes slideRight {
-	0% {
-	  opacity: 0;
-	  transform: translateX(100%);
-	}
-	100% {
-	  opacity: 1;
-	  transform: translateX(0);
-	}
-  }
 
 nav
 	{
@@ -636,6 +634,8 @@ li a
 }
 .row{
 	display: flex;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 ul{
@@ -644,7 +644,7 @@ ul{
 
 .footer-col{
    width: 25%;
-   padding: 0 15px;
+   padding: 0 4.61vw;
 }
 
 .footer-col h4{
