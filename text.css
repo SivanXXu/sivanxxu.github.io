@@ -331,7 +331,7 @@ section
 }
 
 .bimg{
-	border-radius: 20%;
+	border-radius: 50px;
 }
 
 .blog img {
@@ -643,8 +643,9 @@ ul{
 }
 
 .footer-col{
-   width: 25%;
-   padding: 0 2.5vw;
+   width: 20%;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .footer-col h4{
