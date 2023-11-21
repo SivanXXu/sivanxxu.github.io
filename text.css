@@ -476,7 +476,7 @@ section
 
 .desc{
 	font-family: 'League Spartan';
-	font-size: 1.542vw;
+	font-size: 1.2vw;
 	color: white;
 	opacity: 0;
 }
@@ -644,7 +644,7 @@ ul{
 
 .footer-col{
    width: 25%;
-   padding: 0 4.61vw;
+   padding: 0 2.5vw;
 }
 
 .footer-col h4{
@@ -653,6 +653,7 @@ ul{
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
+	font-size: 20px;
 }
 .footer-col h4::before{
 	content: '';
@@ -705,10 +706,5 @@ ul{
   .footer-col{
 	width: 50%;
 	margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-	width: 100%;
 }
 }
